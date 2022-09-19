@@ -1,5 +1,5 @@
 public class Person {
-    public static void main(String[] args) {
+
         String sex = "man";
         String name = "Mike";
         int height = 179;
@@ -26,6 +26,4 @@ public class Person {
         String learnJava() {
             return "Каждый день Mike учит JAVA усердно";
         }
-    }
-
 }
