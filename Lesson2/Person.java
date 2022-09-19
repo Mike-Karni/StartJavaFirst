@@ -3,7 +3,7 @@ public class Person {
         String sex = "man";
         String name = "Mike";
         int height = 179;
-        float weight = 79,4f;
+        float weight = 79.4f;
         int age = 34;
 
         void walk() {
@@ -26,7 +26,6 @@ public class Person {
         String learnJava() {
             return "Каждый день Mike учит JAVA усердно";
         }
-        learnJava();
     }
 
 }
