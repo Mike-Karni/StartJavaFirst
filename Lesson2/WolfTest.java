@@ -2,12 +2,12 @@ public class WolfTest {
 
     public static void main(String[] args) {
         Wolf wolfOne = new Wolf();
-        // wolfOne.age = 12;
-        System.out.println("Возраст волка = " + wolfOne.age + " лет.");
-        // wolfOne.weight = 55;
-        System.out.println("Волчок то наш растолстел и весит уже " + wolfOne.weight + " кг.");
-        // wolfOne.nickName = "King Wolf";
-        System.out.println("Волк стал вожаком стаи, и теперь его кличка " + wolfOne.nickName);
+        // // wolfOne.age = 12;
+        // System.out.println("Возраст волка = " + wolfOne.age + " лет.");
+        // // wolfOne.weight = 55;
+        // System.out.println("Волчок то наш растолстел и весит уже " + wolfOne.weight + " кг.");
+        // // wolfOne.nickName = "King Wolf";
+        // System.out.println("Волк стал вожаком стаи, и теперь его кличка " + wolfOne.nickName);
         wolfOne.walk();
         wolfOne.sit();
         wolfOne.run();
@@ -17,13 +17,12 @@ public class WolfTest {
         wolfOne.setSex("female");
         wolfOne.setNickName("King Wolf");
         wolfOne.setWeight(50);
-        wolfOne.setAge(7);
+        wolfOne.setAge(10);
         wolfOne.setColor("White");
-        System.out.println(wolfOne.getSex());
-        System.out.println(wolfOne.getNickName());
-        System.out.println(wolfOne.getWeight());
-        System.out.println(wolfOne.getAge());
-        System.out.println(wolfOne.getColor());
-
+        System.out.println("Волк имеет пол = " + wolfOne.getSex());
+        System.out.println("Имя волчицы = " + wolfOne.getNickName());
+        System.out.println("Масса волчицы = " + wolfOne.getWeight());
+        System.out.println("Возраст волчицы = " + wolfOne.getAge());
+        System.out.println("Цвет волчицы = " + wolfOne.getColor());
     }
 }

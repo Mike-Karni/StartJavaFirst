@@ -1,10 +1,10 @@
 public class Wolf {
 
-    private String sex = "man";
-    private String nickName = "Grey Power";
-    private int weight = 47;
-    private int age = 10;
-    private String color = "grey";
+    private String sex;
+    private String nickName;
+    private int weight;
+    private int age;
+    private String color;
 
     public String getSex() {
         return sex;
@@ -14,7 +14,7 @@ public class Wolf {
         this.sex = sex;
     }
 
-    public String getNickNane() {
+    public String getNickName() {
         return nickName;
     }
 
@@ -26,7 +26,7 @@ public class Wolf {
         return weight;
     }
 
-    void setWeeight(int weight) {
+    void setWeight(int weight) {
         this.weight = weight;
     }
 
