@@ -25,9 +25,4 @@ public class Wolf {
     void hunt() {
         System.out.println("Серый волк охотится только когда голоден.");
     }
-
-
-
-
-
 }
