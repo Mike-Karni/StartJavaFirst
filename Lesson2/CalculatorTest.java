@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.lang.StringIndexOutOfBoundsException;
 
-
 public class CalculatorTest {
 
     public static void main(String[] args) {
@@ -14,7 +13,8 @@ public class CalculatorTest {
                 double num1 = inputNum("первое", scanner);
                 char operation = inputOperation(scanner);
                 double num2 = inputNum("второе", scanner);
-                System.out.println(num1 + " " +  operation + " " + num2 + " = " + calculator.calculation(num1, num2, operation));
+                System.out.println(num1 + " " +  operation + " " + num2 + " = " + 
+                        calculator.calculate(num1, num2, operation));
             } else {
                 System.out.println("Для продолжения или окончания вычисления введите yes или no");
             }
@@ -24,8 +24,7 @@ public class CalculatorTest {
 
     private static double inputNum(String position, Scanner scanner) {
         System.out.print("Введите "+ position + " число: ");
-        double number = scanner.nextDouble();
-        return number;
+        return scanner.nextDouble();
     }
 
     private static char inputOperation(Scanner scanner) {
@@ -33,12 +32,8 @@ public class CalculatorTest {
         char operation = ' ';
         System.out.print("Введите знак операции: ");
         while(!correct) {
-            try {
-                operation = scanner.nextLine().charAt(0);
-                correct = true;
-            } catch(StringIndexOutOfBoundsException e) {
-
-            }
+            operation = scanner.nextLine().charAt(0);
+            correct = true;
         }
         return operation;
     }
