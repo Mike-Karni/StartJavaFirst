@@ -81,13 +81,17 @@ public class Jaeger {
         this.armor = armor;
     }
 
-
-
-
-
-
-
-
+    public Jaeger(String modelName, String status, String origin, float height, float weight,
+            int speed, int strength, int armor) {
+        this.modelName = modelName;
+        this.status = status;
+        this.origin = origin;
+        this.height = height;
+        this.weight = weight;
+        this.speed = speed;
+        this.strength = strength;
+        this.armor = armor;
+    }
 
     public boolean drift() {
         System.out.println("Вы вошли в дрифт");
