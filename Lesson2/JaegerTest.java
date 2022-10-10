@@ -1,7 +1,7 @@
 public class JaegerTest {
 
     public static void main(String[] args) {
-        Jaeger jaegerOne = new Jaeger("", "", "", 0f, 0f, 0, 0, 0);
+        Jaeger jaegerOne = new Jaeger();
         jaegerOne.setModelName("Striker Eureka.");
         System.out.println("modelName = " + jaegerOne.getModelName());
         jaegerOne.setStatus("Destroyed.");
@@ -22,6 +22,7 @@ public class JaegerTest {
         jaegerOne.hit();
         jaegerOne.setStrength(20);
         System.out.println("Машина усилена новым оборудованием.Сила = " + jaegerOne.getStrength());
+        
         Jaeger jaegerTwo = new Jaeger("Cherno Alpha", "Destroyed", "Russia", 85.34f, 2412f,
                 3, 10, 10);
         System.out.println("\nmodelName = " + jaegerTwo.getModelName());
